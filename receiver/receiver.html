@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <style>  body{
+                background-color:#00001a;
+            }
+            #b1,#b2{background-color:#ff4d4d;
+                    border:0;
+                    width:130px;
+                    height:30px;
+                    border-radius: 4px;
+            
+            }
+            #username-input{
+                width:260px;
+                height:40px;
+                border-radius: 4px;
+                
+            }
+            </style>
+    </head>
+    <body style="text-align:center"><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <input placeholder="Enter username..."
+                    type="text"
+                    id="username-input" /><br><br>
+            <button id="b1" onclick="joinCall()">Join Call</button>
+        </div>
+        <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button onclick="muteVideo()">Mute Video</button>
+                <button onclick="muteAudio()">Mute Audio</button>
+            </div>
+        </div>
+        <script src="./receiver.js"></script>
+    </body>
+
+</html>
